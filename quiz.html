@@ -4,15 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>triangle quiz</title>
 </head>
 <body>
+
+    <nav class="navigation">
+        <div class="container-fluid">
+        <ul class="triangles">
+            <li>
+                <a href="./istriangle.html">Is 
+                    it triangle?
+                </a>
+            </li>
+            <li>
+                <a href="./area.html">Area Of Triangle
+                </a>
+            </li>
+            <li>
+                <a href="./hypotenuse.html">Find hypotenuse
+                </a>
+            </li>
+            <li>
+                <a href="./quiz.html">Quiz
+                </a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+
     <div class="container">
         <h1 class="heading">Triangle Quiz</h1>
 
         <form class="quiz-form">
             <div class="question-container">
-                <p>What is the third angle of a triangle where angle1= 45 degree and angle2= 90 degree?</p>
+                <p>1-What is the third angle of a triangle where angle1= 45 degree and angle2= 90 degree?</p>
                 <lable>
                     <input type="radio" name
                     ="question1" value="45 degree" >45 degree
@@ -28,7 +54,7 @@
             </div>
             
             <div class="question-container">
-                <p>If a triangle has an angle of 90 degrees, what is it called?</p>
+                <p>2-If a triangle has an angle of 90 degrees, what is it called?</p>
                 <lable>
                     <input type="radio" name
                     ="question2" value="acute " >acute
@@ -48,6 +74,15 @@
 
          </div>
     </div>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <h3>About the development of this web application</h3>
+            <p>
+                This is a web application made purely using HTML, CSS and JavaScript. It is made for submission to Neog.camp web development bootcamp.
+            </p>
+        </div>
+    </footer>
 </body>
 <script src="./quiz.js"></script>
 </html>

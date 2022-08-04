@@ -4,15 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Calculate Hypotenuse</title>
 </head>
 <body>
+
+    <nav class="navigation">
+        <div class="container-fluid">
+        <ul class="triangles">
+            <li>
+                <a href="./istriangle.html">Is 
+                    it triangle?
+                </a>
+            </li>
+            <li>
+                <a href="./area.html">Area Of Triangle
+                </a>
+            </li>
+            <li>
+                <a href="./hypotenuse.html">Find hypotenuse
+                </a>
+            </li>
+            <li>
+                <a href="./quiz.html">Quiz
+                </a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+
+
     <div class="container">
         <h1 class="heading">Calculate Hypotenuse</h1>
-        <label>a=</label>
-        <input type="number" class="side-input">
-        <label>b=</label>
-        <input type="number" class="side-input">
+
+        <div class="angle1">
+            <label >a=</label>
+            <input type="number" class="side-input">
+        </div>
+        
+        <div class="angle2">
+            <label>b=</label>
+            <input type="number" class="side-input">
+        </div>
+        
 
         <button id="hypotenuse-btn">Find Hypotenuse</button>
 
@@ -20,6 +54,16 @@
 
         </div>
     </div>
+
+
+    <footer class="footer">
+        <div class="footer-text">
+            <h3>About the development of this web application</h3>
+            <p>
+                This is a web application made purely using HTML, CSS and JavaScript. It is made for submission to Neog.camp web development bootcamp.
+            </p>
+        </div>
+    </footer>
 </body>
 <script src="./hypotenuse.js"></script>
 </html>
