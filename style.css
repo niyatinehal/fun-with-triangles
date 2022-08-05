@@ -15,6 +15,9 @@ body{
 .container-fluid{
     background-color:#F5D0FE;
     height: 20vh;
+    margin-top: 10px;
+    height: 55px;
+    margin-bottom: 20px;
 }
 
 .triangles{
@@ -25,14 +28,14 @@ body{
 }
 
 .triangles li{
-    padding: 10px;
+    padding: 55px;
     display: inline;
 }
 
 .triangles a{
     margin: 20px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 35px;
 }
 .paragraph{
     font-size: 35px;
@@ -41,6 +44,7 @@ body{
     margin: 40px 200px;
     border-radius: 2rem;
     padding:10px;
+    background-color: #F5D0FE;
 }
 
 .list{
@@ -70,6 +74,7 @@ body{
 
 .footer-text p{
     font-size: 25px;
+    text-align: center;
 }
 
 .container{
