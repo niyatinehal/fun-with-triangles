@@ -10,15 +10,24 @@ function calculateSum(angle1, angle2, angle3){
 
 
 function isItTriangle(){
-    const sumOfAngles= calculateSum(Number(input[0].value),Number(input[1].value),Number(input[2].value));
+    var angle1=Number(input[0].value);
+    var angle2=Number(input[1].value);
+    var angle3=Number(input[2].value);
+    const sumOfAngles= calculateSum(angle1,angle2,angle3);
+    if(angle1<0 || angle2<0 || angle3<0)
+    {
+        outputMsg.innerText="Please enter a valid input";
+    }else if(sumOfAngles===180)
+          {
+             // console.log("Yay! Triangle is made.")
+              outputMsg.innerText="Yay! Triangle is made."
+           }else
+               {
+                 // console.log("Oops! Not the triangle we want.")
+                  outputMsg.innerText="Oops! Not the triangle we want"
+                }
      
-    if(sumOfAngles===180){
-        // console.log("Yay! Triangle is made.")
-        outputMsg.innerText="Yay! Triangle is made."
-    }else{
-        // console.log("Oops! Not the triangle we want.")
-        outputMsg.innerText="Oops! Not the triangle we want"
-    }
+    
 }
 
 checkButton.addEventListener('click', isItTriangle);

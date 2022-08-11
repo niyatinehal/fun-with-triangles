@@ -9,11 +9,18 @@ function calculateSumOfSquares(a,b){
 }
 
 function calculateHypotenuse(){
+    var length=Number(sideLength[0].value);
+    var height=Number(sideLength[1].value);
+    if(length<0 || height<0){
+        outputMsg.innerText="Please enter a valid input"
+    }else{
+           const sumOfSquares=calculateSumOfSquares(length,height);
+           const lengthOfHypotenuse=Math.sqrt(sumOfSquares);
+           console.log(lengthOfHypotenuse);
+           outputMsg.innerText="Hypoteneuse length= " + lengthOfHypotenuse;
+    }
 
-    const sumOfSquares=calculateSumOfSquares(Number(sideLength[0].value),Number(sideLength[1].value));
-    const lengthOfHypotenuse=Math.sqrt(sumOfSquares);
-    console.log(lengthOfHypotenuse);
-    outputMsg.innerText="Hypoteneuse length= " + lengthOfHypotenuse;
+    
 
 }
 
