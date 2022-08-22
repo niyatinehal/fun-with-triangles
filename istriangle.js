@@ -14,7 +14,9 @@ function isItTriangle(){
     var angle2=Number(input[1].value);
     var angle3=Number(input[2].value);
     const sumOfAngles= calculateSum(angle1,angle2,angle3);
-    if(angle1<0 || angle2<0 || angle3<0)
+    if(angle1 && angle2 && angle3)
+    {
+        if(angle1<0 || angle2<0 || angle3<0)
     {
         outputMsg.innerText="Please enter a valid input";
     }else if(sumOfAngles===180)
@@ -26,6 +28,12 @@ function isItTriangle(){
                  // console.log("Oops! Not the triangle we want.")
                   outputMsg.innerText="Oops! Not the triangle we want"
                 }
+    }
+    else{
+        outputMsg.style.color="red";
+        outputMsg.innerText="Please enter a valid text!";
+    }
+    
      
     
 }

@@ -11,7 +11,9 @@ function calculateSumOfSquares(a,b){
 function calculateHypotenuse(){
     var length=Number(sideLength[0].value);
     var height=Number(sideLength[1].value);
-    if(length<0 || height<0){
+    if(length && height)
+    {
+        if(length<0 || height<0){
         outputMsg.innerText="Please enter a valid input"
     }else{
            const sumOfSquares=calculateSumOfSquares(length,height);
@@ -19,6 +21,12 @@ function calculateHypotenuse(){
            console.log(lengthOfHypotenuse);
            outputMsg.innerText="Hypoteneuse length= " + lengthOfHypotenuse;
     }
+    }
+    else{
+        outputMsg.style.color="red";
+        outputMsg.innerText="Please enter a vlaid text!";
+    }
+    
 
     
 
